@@ -24,6 +24,7 @@ export interface TaxCalculatorResponse {
   medicalTaxCredit?: number;
   totalTaxLiability?: number;
   monthlyPaye?: number;
+  monthlyUif?: number;
   monthlyNettSalary?: number;
 }
 
@@ -33,7 +34,7 @@ class TaxCalculatorService {
       calculateTaxDto;
 
     const age = this.calculateAge(dateOfBirth);
-    console.log(age);
+
     const annualSalary = monthlySalary * 12;
 
     const isAboveTaxThreshold = this.isAboveTaxThreshold(annualSalary, age);
@@ -55,12 +56,14 @@ class TaxCalculatorService {
 
     let monthlyPaye = totalTaxLiability / 12;
 
-    let monthlyNettSalary = monthlySalary - monthlyPaye;
+    let monthlyUif = this.calculateUif(monthlySalary);
+
+    let monthlyNettSalary = monthlySalary - monthlyPaye - monthlyUif;
 
     if (totalTaxLiability < 0) {
       totalTaxLiability = 0;
       monthlyPaye = 0;
-      monthlyNettSalary = 0;
+      monthlyNettSalary = monthlySalary - monthlyUif;
     }
 
     return {
@@ -72,8 +75,17 @@ class TaxCalculatorService {
       medicalTaxCredit,
       totalTaxLiability,
       monthlyPaye,
+      monthlyUif,
       monthlyNettSalary,
     };
+  }
+
+  private static calculateUif(monthlySalary: number): number {
+    if (monthlySalary >= 14872) {
+      return 148.72;
+    }
+
+    return monthlySalary * 0.01;
   }
 
   private static calculateAge(dateOfBirth: Moment): number {
@@ -145,7 +157,7 @@ class TaxCalculatorService {
     const taxBracket = this.findTaxBracket(annualSalary);
 
     const tax =
-      (taxBracket.lowerLimit - 1 - annualSalary) * taxBracket.rate +
+      (annualSalary - (taxBracket.lowerLimit - 1)) * taxBracket.rate +
       taxBracket.additionalAmount;
 
     return tax;

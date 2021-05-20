@@ -30,6 +30,7 @@ const TaxSummary: FC<Props> = ({ taxSummary }) => {
   const receiveDescriptionLineData: DescriptionLine[] = [
     { label: "Monthly salary", amount: taxSummary?.monthlySalary },
     { label: "Monthly PAYE", amount: taxSummary?.monthlyPaye },
+    { label: "Monthly UIF", amount: taxSummary?.monthlyUif },
     {
       label: "Monthly nett salary",
       amount: taxSummary?.monthlyNettSalary,

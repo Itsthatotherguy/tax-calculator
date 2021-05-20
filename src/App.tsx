@@ -1,6 +1,3 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import "antd/dist/antd.css";
 
 import Layout from "./components/UI/Layout/Layout";

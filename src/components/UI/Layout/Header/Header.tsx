@@ -16,8 +16,10 @@ const Header: FC = () => {
       <Title level={4} style={{ color: "#fff", marginBottom: 0 }}>
         Tax Calculator
       </Title>
-      <Button href="https://github.com/itsthatotherguy.com/tax-calculator">
-        View Repository
+      <Button>
+        <a href="https://github.com/Itsthatotherguy/tax-calculator">
+          View Repository
+        </a>
       </Button>
     </AntHeader>
   );
