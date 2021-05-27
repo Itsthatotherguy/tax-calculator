@@ -43,7 +43,7 @@ export const taxBrackets: TaxBracket[] = [
     additionalAmount: 229089,
   },
   {
-    lowerLimit: 782201,
+    lowerLimit: 1656601,
     upperLimit: Infinity,
     rate: 0.45,
     additionalAmount: 587593,
