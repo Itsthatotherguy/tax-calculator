@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/tax-calculator/static/css/main.21ca481e.chunk.css",
-    "main.js": "/tax-calculator/static/js/main.1d37d8e9.chunk.js",
-    "main.js.map": "/tax-calculator/static/js/main.1d37d8e9.chunk.js.map",
-    "runtime-main.js": "/tax-calculator/static/js/runtime-main.09405115.js",
-    "runtime-main.js.map": "/tax-calculator/static/js/runtime-main.09405115.js.map",
-    "static/css/2.00bb4513.chunk.css": "/tax-calculator/static/css/2.00bb4513.chunk.css",
-    "static/js/2.9106073b.chunk.js": "/tax-calculator/static/js/2.9106073b.chunk.js",
-    "static/js/2.9106073b.chunk.js.map": "/tax-calculator/static/js/2.9106073b.chunk.js.map",
-    "static/js/3.a6df67a4.chunk.js": "/tax-calculator/static/js/3.a6df67a4.chunk.js",
-    "static/js/3.a6df67a4.chunk.js.map": "/tax-calculator/static/js/3.a6df67a4.chunk.js.map",
+    "main.css": "/tax-calculator/static/css/main.3a855c52.chunk.css",
+    "main.js": "/tax-calculator/static/js/main.be4860c2.chunk.js",
+    "main.js.map": "/tax-calculator/static/js/main.be4860c2.chunk.js.map",
+    "runtime-main.js": "/tax-calculator/static/js/runtime-main.c10eb800.js",
+    "runtime-main.js.map": "/tax-calculator/static/js/runtime-main.c10eb800.js.map",
+    "static/css/2.3089e125.chunk.css": "/tax-calculator/static/css/2.3089e125.chunk.css",
+    "static/js/2.5bd7a167.chunk.js": "/tax-calculator/static/js/2.5bd7a167.chunk.js",
+    "static/js/2.5bd7a167.chunk.js.map": "/tax-calculator/static/js/2.5bd7a167.chunk.js.map",
+    "static/js/3.624e1067.chunk.js": "/tax-calculator/static/js/3.624e1067.chunk.js",
+    "static/js/3.624e1067.chunk.js.map": "/tax-calculator/static/js/3.624e1067.chunk.js.map",
     "index.html": "/tax-calculator/index.html",
-    "static/css/2.00bb4513.chunk.css.map": "/tax-calculator/static/css/2.00bb4513.chunk.css.map",
-    "static/css/main.21ca481e.chunk.css.map": "/tax-calculator/static/css/main.21ca481e.chunk.css.map",
-    "static/js/2.9106073b.chunk.js.LICENSE.txt": "/tax-calculator/static/js/2.9106073b.chunk.js.LICENSE.txt"
+    "static/css/2.3089e125.chunk.css.map": "/tax-calculator/static/css/2.3089e125.chunk.css.map",
+    "static/css/main.3a855c52.chunk.css.map": "/tax-calculator/static/css/main.3a855c52.chunk.css.map",
+    "static/js/2.5bd7a167.chunk.js.LICENSE.txt": "/tax-calculator/static/js/2.5bd7a167.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.09405115.js",
-    "static/css/2.00bb4513.chunk.css",
-    "static/js/2.9106073b.chunk.js",
-    "static/css/main.21ca481e.chunk.css",
-    "static/js/main.1d37d8e9.chunk.js"
+    "static/js/runtime-main.c10eb800.js",
+    "static/css/2.3089e125.chunk.css",
+    "static/js/2.5bd7a167.chunk.js",
+    "static/css/main.3a855c52.chunk.css",
+    "static/js/main.be4860c2.chunk.js"
   ]
 }
